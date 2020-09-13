@@ -10,11 +10,16 @@ export default function App() {
         <a
           href="https://www.linkedin.com/in/filipa-pinho-2a7a322a/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Filipa Pinho
         </a>{" "}
         and is{" "}
-        <a href="https://github.com/Pipa35/react-weather-app" target="_blank">
+        <a
+          href="https://github.com/Pipa35/react-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           open-sourced on Github
         </a>
       </footer>
