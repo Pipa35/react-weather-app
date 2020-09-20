@@ -1,4 +1,5 @@
 import React from "react";
+import "./WeatherForecastPreview.css";
 
 export default function WeatherForecastPreview(props) {
   function hours() {
@@ -17,13 +18,17 @@ export default function WeatherForecastPreview(props) {
     return `${temperature}ºC`;
   }
 
-  console.log(iconWeather());
-
   return (
     <div className="WeatherForecastPreview col">
-      {hours()}
-      <img src={iconWeather()} alt="error" className="float-left"></img>
-      {temperature()}
+      <div className="row">
+        <ul>
+          <li>{hours()}</li>
+          <li>
+            <img src={iconWeather()} alt="error"></img>
+          </li>
+          <li>{temperature()}</li>
+        </ul>
+      </div>
     </div>
   );
 }
